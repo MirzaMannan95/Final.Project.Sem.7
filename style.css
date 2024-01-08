@@ -1,0 +1,289 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  color: #fff;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+.main {
+  flex: 1;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+footer {
+  text-align: right;
+  color: #ffbc64;
+  clear: both;
+}
+
+.creative {
+  color: midnightblue;
+}
+
+.tile-image {
+  height: 200px;
+  float: left;
+  margin-right: 50px;
+}
+
+.card {
+  width: 45%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #000;
+  display: flex;
+  padding: 10px;
+  width: 100%;
+  justify-content: center;
+}
+
+.topnav a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 15px;
+}
+
+.topnav a:hover {
+  background-color: #ffbc64;
+  color: black;
+}
+
+.topnav a.active {
+  color: white;
+}
+
+.burger-icon {
+  display: none;
+  cursor: pointer;
+  color: #f2f2f2;
+  font-size: 20px;
+}
+
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  text-align: center;
+  background-color: #333;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+}
+
+.burger-menu a {
+  color: white;
+  padding: 15px;
+  display: block;
+  text-decoration: none;
+}
+
+@media (max-width: 680px) {
+  .logo {
+    width: 100px;
+    vertical-align: middle;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .card {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+
+  .card img {
+    margin: 10px;
+    width: 100%;
+    display: inline;
+    object-fit: cover;
+  }
+
+  .topnav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .topnav a {
+    margin: 10px 0;
+    display: none;
+  }
+
+  .topnav:not(:target) .burger-menu {
+    display: none;
+  }
+
+  .burger-icon {
+    display: block;
+  }
+
+  .topnav:target .burger-menu {
+    display: flex;
+  }
+
+  .burger-menu {
+    flex-direction: column;
+    text-align: center;
+    background-color: #333;
+    position: absolute;
+    top: 140px;
+    left: 0;
+    width: 100%;
+  }
+
+  .burger-menu a {
+    color: white;
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+  }
+}
+.agency-name {
+  color: #ffbc64;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ffbc64;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #ffbc64;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input:focus {
+  outline: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+input[type="submit"]:hover {
+  background-color: #000;
+  color: #ffbc64;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #000;
+  padding: 20px;
+}
+
+label {
+  color: grey;
+}
+.service {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  color: #333;
+  margin-bottom: 30px;
+}
+.service h2 {
+  color: #007bff;
+}
+.service p {
+  color: #fff;
+}
+.portfolio-item {
+  max-width: 50%;
+  height: auto;
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #fff;
+  }
+}
+.product-overview {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ffbc64;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  h2 {
+    color: midnightblue;
+  }
+
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+}
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #ffffff;
+  background-color: midnightblue;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 4px #ffffff;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #ffbc64;
+}
+
+.button:active {
+  background-color: midnightblue;
+  box-shadow: 0 2px #ffffff;
+  transform: translateY(2px);
+}
+
+.firstSectionContact {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.subSectionContact{
+  width: 50%;
+}
+.input-color{
+  width: 472px; 
+  background-color: #000; 
+  color: #ffbc64
+}

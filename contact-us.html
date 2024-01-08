@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="Style.js"></script>
+    <title>Contact-us</title>
+  </head>
+  <!--   or onfocus events onsubmit-->
+  <body>
+    <h1 style="color: #ffbc64">Contact US</h1>
+    <div class="container">
+      <form>
+        <div class="firstSectionContact">
+          <div class="subSectionContact">
+            <input
+              type="text"
+              id="fname"
+              required
+              name="firstname"
+              onfocus="handleBlur()"
+              placeholder="Your name.."
+              style="width: 472px; background-color: #000; color: #ffbc64"
+            />
+          </div>
+          <div class="subSectionContact">
+            <input
+              type="text"
+              onfocus="handleBlur()"
+              id="lname"
+              required
+              name="lastname"
+              placeholder="Your last name.."
+              style="width: 472px; background-color: #000; color: #ffbc64"
+            />
+          </div>
+        </div>
+        <div style="width: 100%; display: flex; justify-content: space-between">
+          <div class="subSectionContact">
+            <select
+              id="country"
+              required
+              name="country"
+              onfocus="handleBlur()"
+              style="width: 472px; background-color: #000; color: #ffbc64"
+            >
+              <option value="" selected disabled>
+                -- Select Any Option --
+              </option>
+              <option value="pakistan">Pakistan</option>
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+          </div>
+          <div class="subSectionContact">
+            <select
+              id="country"
+              required
+              name="country"
+              onfocus="handleBlur()"
+              style="width: 472px; background-color: #000; color: #ffbc64"
+            >
+              <option value="" selected disabled>
+                -- Select Any Option --
+              </option>
+              <option value="pakistan">Pakistan</option>
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+          </div>
+        </div>
+        <textarea
+          id="subject"
+          name="subject"
+          rows="2"
+          required
+          onfocus="handleBlur()"
+          style="width: 1035px; background-color: #000; color: #ffbc64"
+          placeholder="Write something.."
+        ></textarea>
+        <div>
+          <input
+            type="submit"
+            value="SUBMIT"
+            style="width: 1035px; border: 1px solid #ffbc64"
+          />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
